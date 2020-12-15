@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title>MÚSICA GO SONG
+	</title>
+	<h1>VAMOS OUVIR UMA MÚSICA?</h1>
+
+
+
+<style >
+/*O CSS está dentro do próprio arquivo, não é uma prática boa, mas utilizei para deixar os códigos em um arquivo único. */
+
+	.conteudo{
+text-align: left;
+
+	}
+	button{
+background-color: red;
+font-size: 32px;
+padding: 8px 20px;
+cursor: pointer;
+	}
+
+body{
+background-color: #008000;
+
+}
+
+
+h3{
+
+font-size: 52px;
+padding: 8px 20px;
+cursor: pointer;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<!--Áudio para o botão acionar, lembrando que deve estar na mesma pasta que o código-->	
+
+      <audio id="sound" src="Unravel ( Full Metal Version ) - Tokyo Ghoul - Cover by Amy B - TK from Ling Tosite Sigure.mp3" style="display: none;">  </audio>
+
+      <div class="conteudo"> 
+
+<button id="comecar">SONG NOW</button>
+<button id="end">Pausa </button>
+
+</div>
+
+
+<script >
+
+var comecar = document.getElementById('comecar');
+var interval;
+var end1 = document.getElementById('end');
+var interval2;
+
+//Lógica do botão para iniciar a música 
+comecar.addEventListener('click', function(){
+
+
+
+
+
+//Lógica do botão para iniciar a música 
+interval = setInterval(function(){
+   
+           document.getElementById("sound").play();
+           clearInterval(interval);
+
+    	
+
+})
+
+})
+
+
+
+//Comando de pausa da música DANDO ERRO, arrumar depois ¬¬
+end1.addEventListener('click', function(){
+
+
+
+
+
+//Lógica do botão para iniciar a música 
+interval2 = setInterval2(function(){
+   
+           document.getElementById("sound").pause();
+           clearInterval(interval2);
+
+    	
+
+})
+
+})
+
+
+
+
+</script>
